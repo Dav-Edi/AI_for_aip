@@ -68,10 +68,10 @@ class MainWindow(QMainWindow):
 
     def save_promt(self):
         print(self.userPromt)
-        os.environ['STABILITY_HOST'] = 'grpc.stability.ai:443'
+        os.environ['STABILITY_HOST'] = 'YOUR_HOST'
 
 
-        os.environ['STABILITY_KEY'] = 'sk-e4e7uYDTTRXFnTEHWnECZHPWjQ8CaMPWzh7mCNlfOOfPEjk2'
+        os.environ['STABILITY_KEY'] = 'YOUR_TOKEN'
 
         stability_api = client.StabilityInference(
             key=os.environ['STABILITY_KEY'],
